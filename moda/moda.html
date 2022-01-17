@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Google Fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+     <link rel="icon" href="img/FondoIcon.png">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="tittle-header">
+            <figure>
+                <img src="img/disenador-de-moda.png" alt="">
+            </figure>
+            <h1>Calculadora de Moda</h1>
+        </div>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="../Egresos e ingresos/gastos.html">Egresos e Ingresos</a></li>
+                <li><a href="../Mediana/mediana.html">Mediana</a></li>
+                <li><a href="../Descuentos/descuentos.html">Moda</a></li>
+                <li><a href="../figuras.html">Figuras Geometricas</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="section-principal">
+        <form action="">
+            <label for="datosUsuarioModa">Escribe los numeros a los cuales les quieres sacar la moda</label>
+            <input type="text" id="datosUsuarioModa">
+
+            <button type="button" onclick="ClickUsuario()">Agregar numeros</button>
+        </section>
+    </form>
+    <div class="section-Usuario">
+        <p id="TextoFinalUsuarioModa"></p>
+    </div>
+
+
+    <script src="moda.js"></script>
+</body>
+</html>

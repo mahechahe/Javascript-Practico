@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/FondoIcon.png">
+    <link rel="icon" href="img/porcentaje (2).png">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="tittle-header">
+            <figure>
+                <img src="img/Icon.png" alt="">
+            </figure>
+            <h1>Calculadora de Descuentos</h1>
+        </div>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="../Egresos e ingresos/gastos.html">Egresos e Ingresos</a></li>
+                <li><a href="../Mediana/mediana.html">Mediana</a></li>
+                <li><a href="../moda/moda.html">Moda</a></li>
+                <li><a href="../figuras.html">Figuras Geometricas</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <section class="section-principal">
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+        <form action="">
+            <label for="inputPrice">Escribe el precio de tu producto</label>
+            <input type="number" id="inputPrice">
+
+            <label for="inputDescuento">Escribe el descuento de tu producto</label>
+            <input type="number" id="inputDescuento">
+
+            <label for="CuponDescuento">Escribe el cupon de descuento</label>
+            <input type="text" id="CuponDescuento">
+
+            <button type="button" onclick="ClickButtonPrice()">Calcular el precio con descuento</button>
+            
+        </form>
+    </section>
+    <div class="div-resultado">
+        <p id="ResultPrice"></p>
+    </div>
+    <div class="Circle One"></div>
+    <div class="Circle two"></div>
+    <div class="Circle three"></div>
+    <div class="Circle four"></div>
+    <div class="Circle five"></div>
+    <div class="Circle six"></div>
+    <div class="Circle seven"></div>
+    <div class="Circle eight"></div>
+
+
+
+
+
+    <script src="descuentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gastos y Egresos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/FondoIcon.png">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="tittle-header">
+            <figure>
+                <img src="img/calculator.png" alt="">
+            </figure>
+            <h1>Calculadora de Gastos e Egresos</h1>
+        </div>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="../Descuentos/descuentos.html">Egresos e Ingresos</a></li>
+                <li><a href="../Mediana/mediana.html">Mediana</a></li>
+                <li><a href="../moda/moda.html">Moda</a></li>
+                <li><a href="../figuras.html">Figuras Geometricas</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="section-principal">
+        <div class="div-ingresos-section section-container">
+            <h2>Agregar Ingresos</h2>
+            <form action="">
+                <label for="agregarNombreIngreso">Agrega el nombre de tu Ingreso</label>
+                <input type="text" id="agregarNombreIngreso">
+                
+                <button type="button" onclick="agregarNombreIngresoClick()">Agregar el nombre de tu Ingreso</button>
+            </form>
+    
+            <form action="">
+                <label for="agregarValorIngreso">Agrega el valor de tu Ingreso</label>
+                <input type="text" id="agregarValorIngreso">
+    
+                <button type="button" onclick="agregarIngresosUsuarioClick()">Agregar el valor de tu Ingreso</button>
+            </form>
+            
+            <div class="section-ingresos">
+                <p id="ingresosUsuario"></p>
+                <p id="valorIngreso"></p>
+            </div>
+            <p id="IngresosTotales"></p>
+        </div>
+
+        <div class="div-egresos-section section-container" >
+            <h2>Agregar Egresos</h2>
+            <form action="">
+                <label for="agregarEgresoNombre">Agrega el nombre de tu Egreso</label>
+                <input type="text" id="agregarEgresoNombre">
+
+                <button type="button" onclick="agregarNombreEgresosUsuarioClick()">Agregar el nombre</button>
+            </form>
+
+            <form action="">
+                <label for="agregarEgresoValor">Agrega el valor de tu Egreso</label>
+                <input type="text" id="agregarEgresoValor">
+
+                <button type="button" onclick="agregarEgresosUsuarioValorClick()"> Agregar el valor</button>
+            </form>
+
+            <div class="section-egresos">
+                <p id="agregarEgresos"></p>
+                <p id="agregarEgresosValor"></p>
+            </div>
+            <p id="egresosTotales"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-plataRestante">
+            <p id="PlataRestante"></p>
+        </div>
+    </section>
+
+    <script src="gastos.js"></script>
+</body>
+</html>
