@@ -4,7 +4,7 @@ function calcularDescuento(precioOriginal, descuento){
     cuponDescuento = document.getElementById('CuponDescuento');
     cuponDescuentoValue = CuponDescuento.value;
 
-    let Cupones = ['Hola_21', 'Alejita.inst', 'Estiven.cupon', 'Jefe.cuponFinal', 'NoCupon']
+    let Cupones = ['Cupon_25', 'Cupon_15', 'Cupon_50', 'Cupon_70', 'NoCupon']
     let descuentoFinal;
     descuentoNumber = Number(descuento);
 
